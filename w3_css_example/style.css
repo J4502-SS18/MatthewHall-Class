@@ -25,12 +25,11 @@ h1{
   /* text-decoration: none; */
 }
 
-#nav a:link{
+#nav a:link, a:visited{
+  color: #ffffff;
   text-decoration: none;
   background-color: #98bf21;
   font-weight: bold;
   text-align: center;
-  color: #FFFFFF;
   display: block;
-
 }
