@@ -1,0 +1,41 @@
+img{
+border:none;
+}
+#container{
+  width: 95%;
+margin: 0 auto;
+}
+
+#nav {
+  list-style-type: none;
+  padding:0;
+}
+
+#nav li{
+  margin: 0;
+  padding: 0;
+}
+
+#nav a:link, #nav a:visited{
+  display:block;
+  background-color: lime;
+  text-align: center;
+  font-weight: bold;
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 4px;
+  text-decoration: none;
+}
+
+#nav a:hover, #nav a:active{
+}
+
+#contact {
+  font-weight: normal;
+}
+
+h1, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+p{
+  font-family: Helvetica, sans-serif;
+}
