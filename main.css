@@ -27,6 +27,7 @@ margin: 0 auto;
 }
 
 #nav a:hover, #nav a:active{
+  color: white;
 }
 
 #contact {
