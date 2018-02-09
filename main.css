@@ -1,3 +1,12 @@
+/* Colors:
+Orange-tan: FF9D48
+Orange-red: E8551D
+Red: FF3E2D
+Pink: E81D69
+Violet: FC3EFF
+*/
+
+
 img{
 border:none;
 }
@@ -5,7 +14,9 @@ border:none;
   width: 95%;
 margin: 0 auto;
 }
-
+#container{
+  background: #FF9D48;
+}
 #nav {
   list-style-type: none;
   padding:0;
@@ -35,12 +46,17 @@ margin: 0 auto;
 }
 
 #contact {
-  font-weight: bold;
+  font-style: italic;
 }
 
 h1, h3 {
   font-family: 'Poppins', Helvetica, sans-serif;
 }
+
+
 p{
   font-family: 'Playfair',  Georgia, serif;
+}
+#answer{
+  font-weight:bold;
 }
