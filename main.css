@@ -76,6 +76,7 @@ p{
 }
 header{
   background: #E8551D;
+  display:flex;
   flex: 1;
   width: 100%;
 
@@ -106,6 +107,14 @@ header{
 }
   .navigation li:last-of-type a{
   }
+header{
+display: flex;
+width: 50%;
+}
 
+#contact{
+  display: flex;
+  width:50%;
+}
 
 }
