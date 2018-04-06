@@ -88,8 +88,8 @@ header, article, aside {
 flex: 1 100%;
 padding: 10px;
 }
-/* When greater than 800px wide */
-@media (min-width:800px) {
+/* When greater than 600px wide */
+@media (min-width:600px) {
 
   .navigation{
 
@@ -118,10 +118,6 @@ order:1;
   flex-flow: row wrap;
 }
 
-.image{
-  width:70%;
-padding-right: 10px;
-}
 .aside-1{
   background: hotpink;
 }
@@ -130,7 +126,7 @@ padding-right: 10px;
 background: chartreuse;
 }
 
-article{
+.imp{
   flex: 3 0px;
   order: 2;
   display: flex;
@@ -139,20 +135,25 @@ article{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "a ."
-  "b .";
+  "a c"
+  "b d";
+  max-width: 85%;
 }
 
-article img{
-  max-width: 350px;
-}
-
-.image{
+.imp .image{
   grid-area: a;
+
 }
 
 .contact{
   grid-area: b;
+}
+
+#lorem1{
+  grid-area: c;
+}
+#lorem2{
+  grid-area: d;
 }
 /* ordering */
 .aside-1{
@@ -164,8 +165,41 @@ article{
 .aside-2{
   order:3;
 }
+
 }
 
-@media screen (min-width: 1200px){
+@media (min-width:800px){
+.imp{
+  grid-template-columns: 1fr 2fr;
+  max-width: 70%;
+justify-content: space-between 30px;
+grid-template-areas:
+"a d"
+"c b";
+grid-gap: 15px;
+}
 
+.imp .image{
+  grid-area: d;
+  width: 100%;
+}
+
+.contact{
+  grid-area: b;
+}
+
+#lorem1{
+  grid-area: a;
+}
+#lorem2{
+  grid-area: c;
+}
+}
+
+@media (min-width: 1200px){
+.imp{
+  grid-template-areas:
+  "b a"
+  "c d";
+}
 }
