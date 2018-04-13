@@ -23,16 +23,16 @@ margin: 0 auto;
 
 
 
-.navigation{
+nav ul{
   	list-style: none;
   	margin: 0;
   	background: grey;
       padding: 0;
-      display: flex;
+      display: none;
   	flex-flow: column;
 }
 
-.navigation a {
+nav a {
 	text-decoration: none;
 	display: block;
 	color: white;
@@ -41,10 +41,10 @@ margin: 0 auto;
     border-bottom:1px solid black;
 }
 
-.navigation li:last-of-type a{
+nav li:last-of-type a{
   border-bottom: none;
 }
-.navigation a:hover{
+nav a:hover{
   background: black;
 }
 #contact {
@@ -69,6 +69,16 @@ p{
   background:#FF9D48;
 }
 
+.menu-trigger{
+  order:1;
+  font-size: 1.75em;
+  width: 2em;
+  background: black;
+}
+
+nav ul{
+ display: none;
+}
 /*Setting up flexible boxes for our content*/
 .wrapper{
   display: flex;
@@ -88,29 +98,36 @@ header, article, aside {
 flex: 1 100%;
 padding: 10px;
 }
+}
 /* When greater than 600px wide */
 @media (min-width:600px) {
-
-  .navigation{
-
+  nav ul{
+    display:flex;
+  }
+.menu-trigger{
+  display:none;
+}
+nav{
+  display: flex;
     	flex-flow: row;
       justify-content: flex-end;
   }
 
-  .navigation a {
+  nav a {
     border: none;
 
   }
-.navigation a:hover {
+
+nav a:hover {
   background: black;
 }
-  .navigation li:last-of-type a{
+  nav li:last-of-type a{
   }
 
 header{
 display: block;
 width: 100%;
-order:1;
+order:0;
 }
 
 .wrapper{
