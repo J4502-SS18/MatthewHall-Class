@@ -102,11 +102,12 @@ padding: 10px;
 /* When greater than 600px wide */
 @media (min-width:600px) {
   nav ul{
-    display:flex;
-  }
-.menu-trigger{
-  display:none;
-}
+    list-style: none;
+    margin: 0;
+    background: grey;
+      padding: 0;
+      display: none;  }
+
 nav{
   display: flex;
     	flex-flow: row;
@@ -115,6 +116,7 @@ nav{
 
   nav a {
     border: none;
+
 
   }
 
@@ -183,6 +185,7 @@ article{
   order:3;
 }
 
+
 }
 
 @media (min-width:800px){
@@ -212,6 +215,10 @@ grid-gap: 15px;
   grid-area: c;
 }
 }
+/*
+nav .menu-trigger{
+  display:none;}
+} */
 
 @media (min-width: 1200px){
 .imp{
