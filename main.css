@@ -79,6 +79,25 @@ p{
 nav ul{
  display: none;
 }
+
+.map-wrapper {
+    overflow:hidden;
+    padding-bottom:10%;
+    position:relative;
+    height:0;
+    background: #E8551D;
+}
+
+.map-wrapper iframe{
+    left:0;
+    top:0;
+    height:45%;
+    width:45%;
+    position:absolute;
+    background: #E8551D;
+}
+
+
 /*Setting up flexible boxes for our content*/
 .wrapper{
   display: flex;
@@ -116,8 +135,6 @@ nav{
 
   nav a {
     border: none;
-
-
   }
 
 nav a:hover {
@@ -181,12 +198,12 @@ background: chartreuse;
 article{
   order:2;
 }
-.aside-2{
+.map-wrapper{
   order:3;
 }
 
 
-}
+} /*/ closing bracket for all above/*/
 
 @media (min-width:800px){
 .imp{
